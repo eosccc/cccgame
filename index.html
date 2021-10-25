@@ -76,9 +76,9 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/cocos2d-js-min.0dc57.js', function () {
+    loadScript(debug ? 'cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/cocos2d-js-min.0dc57.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/physics.js' : 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/physics-min.js', window.boot);
+        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
       }
       else {
         window.boot();
