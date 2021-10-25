@@ -37,20 +37,20 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <link rel="stylesheet" type="text/css" href="style-mobile.d80b7.css"/>
-  <link rel="icon" href="favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/style-mobile.d80b7.css"/>
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/favicon.png"/>
 </head>
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
-  <div id="splash" style="background: #000baa url(ccc2.38e81.jpg) no-repeat fixed center;">
+  <div id="splash" style="background: #000baa url(https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/ccc2.38e81.jpg) no-repeat fixed center;">
     <div class="progress-bar stripes" style="top: 50%">
       <span style="width: 0%"></span>
     </div>
   </div>
 
-<script src="src/settings.ad850.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/src/settings.ad850.js" charset="utf-8"></script>
 
-<script src="main.363dd.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/main.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -76,9 +76,9 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.0dc57.js', function () {
+    loadScript(debug ? 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/cocos2d-js.js' : 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/cocos2d-js-min.0dc57.js', function () {
       if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+        loadScript(debug ? 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/physics.js' : 'https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/physics-min.js', window.boot);
       }
       else {
         window.boot();
