@@ -35,7 +35,8 @@ input::-webkit-inner-spin-button {
 }
 
 canvas {
-  background-color: rgba(0, 0, 0, 0);width:40%;
+  background-color: rgba(0, 0, 0, 0);
+  width:39%;
 }
 
 a:link, a:visited {
