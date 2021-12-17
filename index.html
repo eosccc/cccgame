@@ -37,7 +37,7 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/style-mobile.d80b7.css"/> -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/style-mobile.d80b7.css"/>
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/favicon.png"/>
   <script>
 		! function (a) {
@@ -93,20 +93,12 @@
         }
         
         if (isMobile.phone && getQueryString("type") != "pc") {
-            setActiveStyleSheet("https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/style-mobile.d80b7.css"); 
+            
         }else{
-		    setActiveStyleSheet("https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/style-desktop.81ede.css"); 
+		    document.getElementsByTagName("body")[0].style.width  = "39%";
 		}
 		
-		// 判断完毕后加载样式 
 
-        function setActiveStyleSheet(filename){
-		   var head = document.getElementsByTagName('head')[0];
- 		   var script = document.createElement('script');
- 		   script.src = filename;
- 		   script.type = 'text/javascript';
- 		   head.appendChild(script);
-		} 
 	</script>
 </head>
 <body>
