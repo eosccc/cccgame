@@ -100,7 +100,13 @@
 		
 		// 判断完毕后加载样式 
 
-        function setActiveStyleSheet(filename){document.write("＜link href="+filename+" rel=stylesheet＞");} 
+        function setActiveStyleSheet(filename){
+		   var head = document.getElementsByTagName('head')[0];
+ 		   var script = document.createElement('script');
+ 		   script.src = filename;
+ 		   script.type = 'text/javascript';
+ 		   head.appendChild(script);
+		} 
 	</script>
 </head>
 <body>
