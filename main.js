@@ -110,7 +110,7 @@ window.boot = function () {
             /**
              * 添加cdn地址;
              */
-            cc.assetManager.loadBundle('https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/assets/'+MAIN, function (err) {
+            cc.assetManager.loadBundle('https://cccgamefi.netlify.app/assets/'+MAIN, function (err) {
                 if (!err) cc.game.run(option, onStart);
             });
         }
@@ -121,8 +121,9 @@ window.boot = function () {
     for (var i = 0; i < bundleRoot.length; i++) {
         /**
          * 添加cdn地址;
+         cc.assetManager.loadBundle('https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/assets/'+bundleRoot[i], cb);
          */
-        cc.assetManager.loadBundle('https://cdn.jsdelivr.net/gh/eosccc/cryptocycle/assets/'+bundleRoot[i], cb);
+        cc.assetManager.loadBundle('https://cccgamefi.netlify.app/assets/'+bundleRoot[i], cb);
     }
 };
 
